@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javavavas</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@800&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body {font-family: 'Sansita Swashed', cursive;background-color: cyan;border:18px dotted black;}
+		#output1 {text-align:center;border-radius:2px solid black; }
+		* {margin:18px;font-size:15px;}
+
+	</style>
+</head>
+<body>
+<p>s'il veut plait , entrez votre Nom <input type="text" id="input1"><button onclick="hin();">click Me</button></p>
+<div id="output1">this is output</div>
+<script type="text/javascript">
+	function hin(){
+		var nom= document.getElementById("input1").value;
+        if (nom.charAt(0) == "k"  || nom.charAt(0) == "K" )  {
+        	messg = "Hello " + nom + "  How are you ?!"
+        } 
+        else {
+         messg="Qui etait-vous ? mr : " +  nom +" ? , Alors Dégage , ha l3aar !!"
+        }
+       document.getElementById("output1").textContent = messg; 
+	}
+</script>
+</body>
+</html>
